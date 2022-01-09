@@ -1,3 +1,5 @@
+// to check process.env.USERNAME =>  console.log(process.env.USERNAME)
+
 function runProgram(input) {
     var arr = input.trim().split('');
 
