@@ -321,3 +321,23 @@ if (process.env.USERNAME === `hp`) {
     });
 }
 */
+
+
+
+// 6. subarray or substring by recursion =>
+
+var str = "abcdefg"
+function SR(str,cur=0) {
+    for (var i = cur; i <= str.length; i++) {
+        if (i == str.length && str.length !=1) {
+            SR(str = str.substring(cur+1),cur);
+        }
+        else if (str.length == 1) {
+            return console.log(str[0]);
+        }
+        else{
+            console.log(str.substring(cur,i+1));
+        }
+    }
+}
+SR(str);
