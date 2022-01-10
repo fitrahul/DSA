@@ -1,5 +1,4 @@
 function GCDR(a,b) {
-    // if (a === 1 || b === 1) return 1;
     if (a === b) return console.log(a);
     else if (a === 1 || b === 1) return console.log(1);
     else if (a > b) {
@@ -31,7 +30,8 @@ function runProgram(input) {
     }
 }
 if (process.env.USERNAME === `hp`) {
-    runProgram(`2
+    runProgram(`3
+    2 25
     6 9
     999999999 999999998`);
 } else {
